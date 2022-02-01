@@ -9,7 +9,7 @@ const myWalletAddress = myKey.getPublic('hex');
 let krishCoin = new Blockchain();
 
 // creates transactions and adds them in pending transactions
-const tx1 = new Transaction(myWalletAddress, 'publicKey', 10);
+const tx1 = new Transaction(myWalletAddress, 'someonePublicKey', 10);
 tx1.signTransaction(myKey);
 krishCoin.addTransaction(tx1);
 
